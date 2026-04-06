@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — Uge Press Editorial Services</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --warm-black: #1a1a1a;
+    --warm-grey: #4a4a4a;
+    --light-grey: #8a8a8a;
+    --cream: #faf8f5;
+    --warm-accent: #c45d3e;
+    --soft-border: #e8e4df;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--warm-black);
+    background: var(--cream);
+    line-height: 1.7;
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Header */
+  header {
+    padding: 40px 0 20px;
+    border-bottom: 1px solid var(--soft-border);
+  }
+
+  .logo-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 3px;
+  }
+
+  .logo-text .uge {
+    font-size: 48px;
+    color: #1a1a1a;
+  }
+
+  .logo-text .press {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--warm-accent);
+    margin-left: 8px;
+    letter-spacing: 3.6px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 60px 0 40px;
+  }
+
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--warm-black);
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    color: #8a8a8a;
+    max-width: 600px;
+    margin-bottom: 16px;
+    font-style: italic;
+  }
+
+  /* FAQ Section */
+  .faq-section {
+    padding: 60px 0;
+    border-top: 1px solid var(--soft-border);
+  }
+
+  .faq-item {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--soft-border);
+  }
+
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+
+  .faq-item h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--warm-black);
+    margin-bottom: 16px;
+    line-height: 1.4;
+  }
+
+  .faq-item p {
+    color: var(--warm-grey);
+    margin-bottom: 16px;
+    line-height: 1.7;
+  }
+
+  .faq-item p strong {
+    color: var(--warm-black);
+    font-weight: 500;
+  }
+
+  .faq-cta {
+    display: inline-block;
+    padding: 11px 26px;
+    background: var(--warm-accent);
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    transition: background 0.2s;
+    border-radius: 24px;
+    margin-top: 12px;
+  }
+
+  .faq-cta:hover {
+    background: #a84d32;
+  }
+
+  /* Back link */
+  .back-link {
+    display: inline-block;
+    margin: 60px 0 40px;
+    padding: 11px 26px;
+    border: 1px solid var(--soft-border);
+    color: var(--warm-grey);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    border-radius: 24px;
+    transition: all 0.2s;
+  }
+
+  .back-link:hover {
+    border-color: var(--warm-accent);
+    color: var(--warm-accent);
+  }
+
+  /* Footer */
+  footer {
+    padding: 60px 0 40px;
+    border-top: 1px solid var(--soft-border);
+    text-align: center;
+  }
+
+  footer .tagline {
+    font-size: 12px;
+    color: var(--light-grey);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    font-size: 13px;
+    color: var(--light-grey);
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 32px; }
+    .faq-item h3 { font-size: 20px; }
+    body { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <div class="logo-text"><span class="uge">UGE</span> <span class="press">PRESS</span></div>
+  </header>
+
+  <a href="index.html" class="back-link">← Back to Home</a>
+
+  <div class="hero">
+    <h1>Questions About Editing?</h1>
+    <p>We answer the questions authors ask most.</p>
+  </div>
+
+  <section class="faq-section">
+
+    <div class="faq-item">
+      <h3>Why is editing so expensive?</h3>
+      <p>Professional editing is expensive because it's highly skilled work. A professional editor spends hours on your manuscript: reading it closely, analyzing structure and pacing, checking facts, refining prose, and documenting every change. We're not charging you for time — we're charging you for expertise. When you hire Uge Press, you're getting an AI editor trained on thousands of publishing standards, plus human oversight for quality.</p>
+      <a href="index.html#offering-1" class="faq-cta">Learn About Our Pricing</a>
+    </div>
+
+    <div class="faq-item">
+      <h3>How long does professional editing actually take?</h3>
+      <p>The honest answer: it depends. A 50,000-word manuscript in rough draft might need 2-4 weeks. But here's what makes Uge Press different: <strong>we do a full professional edit in 7 days.</strong> Not by cutting corners. By using parallel processing — multiple editorial perspectives working simultaneously on structure, voice, facts, consistency, and reader experience. You get speed without sacrifice.</p>
+      <a href="index.html#offering-1" class="faq-cta">Explore 7-Day Service</a>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can an AI editor really understand my voice?</h3>
+      <p>Yes. But not the way you might think. We don't try to rewrite you. We read deeply for your patterns — the words you favor, the rhythms you return to, the unique way you make an argument or tell a story. Then we <strong>sharpen</strong> that voice, not replace it. When we're done, readers hear <strong>your</strong> insight and authority more clearly than before.</p>
+      <a href="index.html#offering-1" class="faq-cta">See How We Edit</a>
+    </div>
+
+    <div class="faq-item">
+      <h3>What's the difference between developmental editing and line editing?</h3>
+      <p><strong>Developmental editing</strong> works on the big picture: structure, pacing, argument flow, chapter organization. Does your book make sense? Does it move the reader forward? Does the conclusion land? <strong>Line editing</strong> works on the sentence level: clarity, rhythm, word choice, consistency. Line editing assumes the structure is solid and focuses on making every sentence sing. Most authors need both. Some need heavy restructuring first.</p>
+      <a href="index.html#offering-1" class="faq-cta">Choose Your Edit Type</a>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is "AI slop" and how do I know if my manuscript has it?</h3>
+      <p>AI slop is hollow writing that sounds polished but says nothing. It includes: overused phrases ("Additionally," "In today's world"), generic descriptions without specificity, rhetorical questions that don't advance the argument, triplet framing (three-item lists just for rhythm), and emotional pivots without substance. You'll recognize it when you read it — something feels off, even if you can't name it. That's what we catch. That's what we remove.</p>
+      <a href="index.html#offering-1" class="faq-cta">Professional Writing Standards</a>
+    </div>
+
+    <div class="faq-item">
+      <h3>Should I self-edit or hire a professional?</h3>
+      <p>Self-edit first, always. You know your manuscript better than anyone. But here's the truth: <strong>you can't see your own blind spots.</strong> You'll read what you meant to write, not what you actually wrote. Repetitive phrases disappear. Structural gaps become invisible. A professional editor sees what you can't — because they're reading it fresh, with trained eyes, for the first time. Think of it this way: professional athletes have coaches. Writers need editors.</p>
+      <a href="index.html#offering-2" class="faq-cta">Learn Your Options</a>
+    </div>
+
+    <div class="faq-item">
+      <h3>How much should I expect to pay for an edit?</h3>
+      <p>It varies. Budget editors ($500–$1,000) often lack depth. Mid-range professionals ($2,000–$5,000) deliver solid work. Premium services ($5,000+) offer specialized expertise and fast turnaround. At Uge Press, we're premium. Our 7-day service starts at $1,500 because we're fast, thorough, and transparent. We're not the cheapest. We're the best value for authors who need results quickly.</p>
+      <a href="index.html#offering-1" class="faq-cta">See Our Tiers</a>
+    </div>
+
+    <div class="faq-item">
+      <h3>What if I don't have time for a full professional edit?</h3>
+      <p>You have options. <strong>BookReady</strong> is our self-serve framework — you work through the same editorial checkpoints we use, on your own timeline, for $97. <strong>Your Book in a Week</strong> teaches you the process for $9.99. Or get a <strong>Polish</strong> edit focused just on prose refinement if structure is already solid. The point: you don't have to choose between fast and good. You can have both.</p>
+      <a href="index.html" class="faq-cta">Explore All Options</a>
+    </div>
+
+    <div class="faq-item">
+      <h3>How will you explain the edits you made?</h3>
+      <p>Full transparency. <strong>We tell you exactly how your edit was produced, what tools were used, and why every change was made.</strong> You'll see tracked changes with comments. You'll know what was flagged for consistency, what was restructured for flow, what was cut because it was redundant. You're not hiring a black box — you're hiring a partner who explains their thinking.</p>
+      <a href="index.html#offering-1" class="faq-cta">Our Process</a>
+    </div>
+
+    <div class="faq-item">
+      <h3>Do you work with memoir or fiction?</h3>
+      <p>We specialize in <strong>nonfiction</strong> — business books, memoirs, self-help, narrative nonfiction, educational books. That's our expertise. If you have a fiction manuscript, we'd recommend finding an editor who specializes in your genre.</p>
+      <a href="index.html#offering-1" class="faq-cta">Start Your Project</a>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="tagline">YOUR MANUSCRIPT. YOUR VOICE. OUR EXPERTISE.</div>
+    <p style="margin-top: 24px;">Uge Press. A division of Ilia Grace & Co.</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
