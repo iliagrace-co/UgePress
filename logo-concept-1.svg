@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Background (transparent in production; cream shown here for preview) -->
+  <rect width="320" height="80" fill="#FAF8F5"/>
+
+  <!-- Wave mark: a single fluid Bézier curve, like a wave crest / typographic macron with life -->
+  <!-- Positioned left of wordmark, terracotta accent color -->
+  <path
+    d="M 16,42 C 22,28 30,22 40,26 C 50,30 54,38 62,34 C 68,31 72,26 78,26"
+    stroke="#C45D3E"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Wordmark: UGE PRESS — using system serif fallback for SVG portability -->
+  <!-- In production, replace with Cormorant Garamond webfont or outlined paths -->
+  <text
+    x="96"
+    y="46"
+    font-family="'Cormorant Garamond', 'Garamond', 'Georgia', serif"
+    font-size="22"
+    font-weight="400"
+    letter-spacing="5"
+    fill="#1a1a1a"
+  >UGE</text>
+
+  <text
+    x="155"
+    y="46"
+    font-family="'Cormorant Garamond', 'Garamond', 'Georgia', serif"
+    font-size="22"
+    font-weight="400"
+    letter-spacing="5"
+    fill="#8a8a8a"
+  > ·</text>
+
+  <text
+    x="172"
+    y="46"
+    font-family="'Inter', 'Helvetica Neue', 'Arial', sans-serif"
+    font-size="11"
+    font-weight="300"
+    letter-spacing="6"
+    fill="#4a4a4a"
+  >PRESS</text>
+
+</svg>

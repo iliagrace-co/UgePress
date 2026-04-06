@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uge Press — Editorial Services for Authors</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --warm-black: #1a1a1a;
+    --warm-grey: #4a4a4a;
+    --light-grey: #8a8a8a;
+    --cream: #faf8f5;
+    --warm-accent: #c45d3e;
+    --soft-border: #e8e4df;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--warm-black);
+    background: var(--cream);
+    line-height: 1.7;
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Header */
+  header {
+    padding: 40px 0 20px;
+    border-bottom: 1px solid var(--soft-border);
+  }
+
+  .logo {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+  }
+
+  .tagline {
+    font-size: 14px;
+    color: var(--light-grey);
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 60px 0 40px;
+  }
+
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--warm-black);
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    color: var(--warm-grey);
+    max-width: 600px;
+    margin-bottom: 16px;
+  }
+
+  .hero .subtext {
+    font-size: 15px;
+    color: var(--light-grey);
+    font-style: italic;
+  }
+
+  /* Sections */
+  section {
+    padding: 60px 0;
+    border-top: 1px solid var(--soft-border);
+  }
+
+  section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    color: var(--warm-black);
+  }
+
+  section p {
+    color: var(--warm-grey);
+    margin-bottom: 16px;
+  }
+
+  section p strong {
+    color: var(--warm-black);
+    font-weight: 500;
+  }
+
+  /* Offerings */
+  .offering {
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--soft-border);
+  }
+
+  .offering h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: var(--warm-black);
+  }
+
+  .offering .subtitle {
+    font-size: 14px;
+    color: var(--warm-accent);
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .offering p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  /* Pricing boxes */
+  .pricing-box {
+    background: white;
+    padding: 20px;
+    border: 1px solid var(--soft-border);
+    margin: 16px 0;
+  }
+
+  .pricing-box p {
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+
+  .price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--warm-accent);
+    margin: 12px 0;
+  }
+
+  .book-feature {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 24px 0;
+  }
+
+  .book-cover {
+    width: 100px;
+    height: auto;
+    flex-shrink: 0;
+    border: 1px solid var(--soft-border);
+  }
+
+  .book-info p {
+    margin-bottom: 12px;
+  }
+
+  /* CTA */
+  .cta-section {
+    text-align: center;
+    padding: 60px 0;
+    border-top: 1px solid var(--soft-border);
+  }
+
+  .cta-section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  .cta-section p {
+    color: var(--warm-grey);
+    margin-bottom: 32px;
+    font-size: 17px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 14px 32px;
+    background: var(--warm-accent);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background 0.2s;
+    margin: 0 8px 16px;
+  }
+
+  .button:hover {
+    background: #a84d32;
+  }
+
+  .button.secondary {
+    background: var(--warm-grey);
+  }
+
+  .button.secondary:hover {
+    background: #3a3a3a;
+  }
+
+  /* Footer */
+  footer {
+    padding: 40px 0;
+    border-top: 1px solid var(--soft-border);
+    text-align: center;
+    font-size: 13px;
+    color: var(--light-grey);
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 36px; }
+    section h2 { font-size: 26px; }
+    body { font-size: 16px; }
+    .book-feature { flex-direction: column; align-items: center; }
+    .book-cover { width: 120px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <svg class="logo" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+      <path d="M 16,42 C 22,28 30,22 40,26 C 50,30 54,38 62,34 C 68,31 72,26 78,26" stroke="#C45D3E" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      <text x="96" y="46" font-family="'Cormorant Garamond', 'Garamond', serif" font-size="22" font-weight="400" letter-spacing="5" fill="#1a1a1a">UGE</text>
+      <text x="155" y="46" font-family="'Cormorant Garamond', serif" font-size="22" font-weight="400" letter-spacing="5" fill="#8a8a8a"> ·</text>
+      <text x="172" y="46" font-family="'Inter', sans-serif" font-size="11" font-weight="300" letter-spacing="6" fill="#4a4a4a">PRESS</text>
+    </svg>
+    <div class="tagline">Editorial services for serious authors</div>
+  </header>
+
+  <div class="hero">
+    <h1>Your manuscript. Your voice. Our expertise.</h1>
+    <p>Uge Press is a boutique editorial service for nonfiction authors who want professional-grade editing without corporate overhead.</p>
+    <p class="subtext">7-day turnaround. Value-based pricing. AI-powered, human-reviewed, brutally honest.</p>
+  </div>
+
+  <section>
+    <h2>Three Ways to Work With Us</h2>
+
+    <div class="offering">
+      <div class="subtitle">Offering 1</div>
+      <h3>Concierge Editorial Service</h3>
+      <p><strong>For:</strong> Authors with finished manuscripts who need professional editing in 7 days.</p>
+      <p>We provide a full editorial pipeline: developmental review, multi-pass editing, fact-checking, sensitivity review, and formatting guidance. You get hands-on collaboration with an AI editor who will push you on structure, voice, and clarity.</p>
+      <div class="pricing-box">
+        <p><strong>Editorial Polish</strong><br>Structure solid, prose needs tightening</p>
+        <p class="price">$1,500 – $2,500</p>
+        
+        <p style="margin-top: 16px;"><strong>Developmental + Edit</strong><br>Structure work + full line editing</p>
+        <p class="price">$2,500 – $5,000</p>
+        
+        <p style="margin-top: 16px;"><strong>Heavy Rewrite</strong><br>Significant restructuring required</p>
+        <p class="price">$4,000 – $7,000</p>
+        
+        <p style="margin-top: 16px;"><strong>Ghostwriting Partnership</strong><br>Outline to publish-ready manuscript</p>
+        <p class="price">$5,000 – $10,000+</p>
+        
+        <p style="margin-top: 16px; font-size: 13px; color: var(--light-grey);"><em>Value-based pricing. Every project is scoped individually.</em></p>
+      </div>
+      <a href="mailto:hello@ugepress.com" class="button">Start a Conversation</a>
+    </div>
+
+    <div class="offering">
+      <div class="subtitle">Offering 2</div>
+      <h3>Your Book in a Week</h3>
+      <p><strong>For:</strong> Anyone writing a nonfiction book who wants to understand the complete process from manuscript to published author.</p>
+      <p>A 17,000-word guide covering everything: editing types, cost, structure, voice, fact-checking, formatting, and publishing on Amazon. Written by Brooke Grace, it's a practical playbook with real examples and honest advice. Now available on Amazon Kindle.</p>
+      
+      <div class="book-feature">
+        <div class="book-info">
+          <p><strong>Your Book in a Week</strong><br>by Brooke Grace</p>
+          <p class="price" style="text-align: left;">$9.99</p>
+          <p style="font-size: 14px; color: var(--light-grey);">Amazon Kindle<br>17,679 words</p>
+          <a href="https://www.amazon.com/dp/B0CWNLPGVB" target="_blank" class="button" style="display: inline-block; margin-top: 12px;">Read on Amazon</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="offering">
+      <div class="subtitle">Offering 3</div>
+      <h3>BookReady (Self-Serve)</h3>
+      <p><strong>For:</strong> Budget-conscious authors who want guided self-editing without hiring an editor.</p>
+      <p>An automated editing checklist and process you work through at your own pace. Part of the BornReady Suite by Zoe Files, this gives you the framework to edit your own manuscript with confidence.</p>
+      <div class="pricing-box">
+        <p class="price" style="text-align: left;">$97</p>
+        <p><em>One-time purchase. Self-paced. Templates included. No live support.</em></p>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Why Uge Press</h2>
+    <p><strong>Seven-day turnaround.</strong> Your momentum matters. We work fast without cutting corners.</p>
+    <p><strong>Multi-agent editorial review.</strong> Your manuscript gets reviewed through five distinct editorial lenses simultaneously: structure, voice, facts, reader experience, and consistency.</p>
+    <p><strong>AI slop detection.</strong> We catch the patterns that make readers distrust a book—the hollow phrases, the generic descriptions, the filler that sounds polished but says nothing.</p>
+    <p><strong>Your voice protected.</strong> We edit FOR your voice, not against it. When we're done, your book sounds more like you, not less.</p>
+    <p><strong>Transparent about what we are.</strong> Uge Press is AI-powered. We tell you exactly how the process works. We don't pretend to be something we're not.</p>
+  </section>
+
+  <div class="cta-section">
+    <h2>Ready to publish?</h2>
+    <p>Whether you want hands-on support, a self-guided process, or to learn the craft first — we have an offering for you.</p>
+    <a href="mailto:hello@ugepress.com" class="button">Inquire About Concierge</a>
+    <a href="https://www.amazon.com/dp/B0CWNLPGVB" target="_blank" class="button secondary">Read the Book</a>
+  </div>
+
+  <footer>
+    <p>Uge Press, a division of Ilia Grace & Co.</p>
+    <p style="margin-top: 12px;"><a href="mailto:hello@ugepress.com" style="color: var(--light-grey); text-decoration: underline;">hello@ugepress.com</a></p>
+  </footer>
+
+</div>
+
+</body>
+</html>

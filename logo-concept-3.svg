@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+
+  <!-- Background -->
+  <rect width="320" height="80" fill="#FAF8F5"/>
+
+  <!-- Concept 3: The Rule Mark — pure typography + editorial hairline rule -->
+
+  <!-- "UGE" — Cormorant Garamond semi-bold -->
+  <text
+    x="40"
+    y="38"
+    font-family="'Cormorant Garamond', 'Garamond', 'Georgia', serif"
+    font-size="24"
+    font-weight="600"
+    letter-spacing="4"
+    fill="#1a1a1a"
+  >UGE</text>
+
+  <!-- Terracotta rule — the editorial divider, doing all the work -->
+  <line x1="40" y1="44" x2="280" y2="44" stroke="#C45D3E" stroke-width="0.75"/>
+
+  <!-- "PRESS" — Inter Light, very wide tracking, quiet counterpoint -->
+  <text
+    x="40"
+    y="62"
+    font-family="'Inter', 'Helvetica Neue', 'Arial', sans-serif"
+    font-size="10"
+    font-weight="300"
+    letter-spacing="10"
+    fill="#4a4a4a"
+  >PRESS</text>
+
+</svg>
