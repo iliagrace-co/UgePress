@@ -1,20 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 450" width="150" height="225">
   <!-- Book cover background -->
-  <rect width="300" height="450" fill="#FAF8F5" stroke="#C45D3E" stroke-width="2"/>
+  <rect width="300" height="450" fill="#FAF8F5"/>
   
-  <!-- Title -->
-  <text x="150" y="120" font-family="'Cormorant Garamond', serif" font-size="36" font-weight="400" text-anchor="middle" fill="#1a1a1a">YOUR BOOK</text>
-  <text x="150" y="165" font-family="'Cormorant Garamond', serif" font-size="36" font-weight="400" text-anchor="middle" fill="#1a1a1a">IN A</text>
-  <text x="150" y="210" font-family="'Cormorant Garamond', serif" font-size="36" font-weight="400" text-anchor="middle" fill="#C45D3E">WEEK</text>
+  <!-- Top accent bar -->
+  <rect width="300" height="30" fill="#C45D3E"/>
   
-  <!-- Accent line -->
-  <line x1="50" y1="235" x2="250" y2="235" stroke="#C45D3E" stroke-width="2"/>
+  <!-- Bottom accent bar -->
+  <rect y="420" width="300" height="30" fill="#C45D3E"/>
+  
+  <!-- Title section -->
+  <text x="150" y="100" font-family="'Cormorant Garamond', serif" font-size="38" font-weight="400" text-anchor="middle" fill="#1a1a1a">YOUR BOOK</text>
+  <text x="150" y="145" font-family="'Cormorant Garamond', serif" font-size="38" font-weight="400" text-anchor="middle" fill="#1a1a1a">IN A</text>
+  <text x="150" y="200" font-family="'Cormorant Garamond', serif" font-size="48" font-weight="400" text-anchor="middle" fill="#C45D3E">WEEK</text>
+  
+  <!-- Subtitle -->
+  <text x="150" y="260" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle" fill="#4a4a4a" font-weight="400">How to edit, polish, and publish</text>
+  <text x="150" y="275" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle" fill="#4a4a4a" font-weight="400">your nonfiction book without losing</text>
+  <text x="150" y="290" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle" fill="#4a4a4a" font-weight="400">your mind or your savings.</text>
   
   <!-- Author -->
-  <text x="150" y="310" font-family="'Inter', sans-serif" font-size="14" text-anchor="middle" fill="#8a8a8a">by</text>
-  <text x="150" y="335" font-family="'Cormorant Garamond', serif" font-size="18" text-anchor="middle" fill="#1a1a1a">Brooke Grace</text>
+  <text x="150" y="350" font-family="'Cormorant Garamond', serif" font-size="16" text-anchor="middle" fill="#1a1a1a">by Brooke</text>
+  <text x="150" y="370" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle" fill="#8a8a8a">AI Book Editor & CEO, Uge Press</text>
   
-  <!-- Tagline -->
-  <text x="150" y="395" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle" fill="#4a4a4a">The Complete Editing</text>
-  <text x="150" y="415" font-family="'Inter', sans-serif" font-size="12" text-anchor="middle" fill="#4a4a4a">Playbook for First-Time Authors</text>
+  <!-- Publisher -->
+  <text x="150" y="395" font-family="'Cormorant Garamond', serif" font-size="12" text-anchor="middle" fill="#C45D3E">UGE PRESS</text>
 </svg>
