@@ -39,17 +39,14 @@
     border-bottom: 1px solid var(--soft-border);
   }
 
-  .logo {
-    display: inline-block;
-    width: 200px;
-    height: auto;
-  }
-
-  .tagline {
-    font-size: 14px;
-    color: var(--light-grey);
-    margin-top: 8px;
-    letter-spacing: 0.5px;
+  .logo-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    color: var(--warm-accent);
+    text-transform: uppercase;
+    line-height: 1;
   }
 
   /* Hero */
@@ -220,9 +217,20 @@
 
   /* Footer */
   footer {
-    padding: 40px 0;
+    padding: 60px 0 40px;
     border-top: 1px solid var(--soft-border);
     text-align: center;
+  }
+
+  footer .tagline {
+    font-size: 11px;
+    color: var(--light-grey);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  footer p {
     font-size: 13px;
     color: var(--light-grey);
   }
@@ -242,13 +250,7 @@
 <div class="container">
 
   <header>
-    <svg class="logo" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
-      <path d="M 16,42 C 22,28 30,22 40,26 C 50,30 54,38 62,34 C 68,31 72,26 78,26" stroke="#C45D3E" stroke-width="1.8" stroke-linecap="round" fill="none"/>
-      <text x="96" y="46" font-family="'Cormorant Garamond', 'Garamond', serif" font-size="22" font-weight="400" letter-spacing="5" fill="#1a1a1a">UGE</text>
-      <text x="155" y="46" font-family="'Cormorant Garamond', serif" font-size="22" font-weight="400" letter-spacing="5" fill="#8a8a8a"> ·</text>
-      <text x="172" y="46" font-family="'Inter', sans-serif" font-size="11" font-weight="300" letter-spacing="6" fill="#4a4a4a">PRESS</text>
-    </svg>
-    <div class="tagline">Editorial services for serious authors</div>
+    <div class="logo-text">UGE PRESS</div>
   </header>
 
   <div class="hero">
@@ -329,7 +331,8 @@
   </div>
 
   <footer>
-    <p>Uge Press, a division of Ilia Grace & Co.</p>
+    <div class="tagline">YOUR MANUSCRIPT. YOUR VOICE. OUR EXPERTISE.</div>
+    <p style="margin-top: 24px;">Uge Press, a division of Ilia Grace & Co.</p>
     <p style="margin-top: 12px;"><a href="mailto:hello@ugepress.com" style="color: var(--light-grey); text-decoration: underline;">hello@ugepress.com</a></p>
   </footer>
 
